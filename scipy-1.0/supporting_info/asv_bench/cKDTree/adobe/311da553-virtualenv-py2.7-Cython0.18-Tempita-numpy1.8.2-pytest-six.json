@@ -1,0 +1,63 @@
+{
+    "benchmark_version": {
+        "spatial.Query.time_query": "327bc0627d5387347e9cdcf4c52a550c813bb80a859eeb0f3e5bfe6650a8a1db"
+    }, 
+    "commit_hash": "311da55345c6eb1174a51810b6586ab7c635c8f4", 
+    "date": 1149601671000, 
+    "ended_at": {
+        "spatial.Query.time_query": 1558682728236
+    }, 
+    "env_name": "virtualenv-py2.7-Cython0.18-Tempita-numpy1.8.2-pytest-six", 
+    "params": {
+        "Cython": "0.18", 
+        "Tempita": "", 
+        "arch": "x86_64", 
+        "cpu": "Intel(R) Core(TM) i5-6600K CPU @ 3.50GHz", 
+        "machine": "adobe", 
+        "numpy": "1.8.2", 
+        "os": "Linux 4.4.0-43-Microsoft", 
+        "pytest": "", 
+        "python": "2.7", 
+        "ram": "66984428", 
+        "six": ""
+    }, 
+    "profiles": {}, 
+    "python": "2.7", 
+    "requirements": {
+        "Cython": "0.18", 
+        "Tempita": "", 
+        "numpy": "1.8.2", 
+        "pytest": "", 
+        "six": ""
+    }, 
+    "results": {
+        "spatial.Query.time_query": {
+            "params": [
+                [
+                    "(3, 10000, 1000)", 
+                    "(8, 10000, 1000)", 
+                    "(16, 10000, 1000)"
+                ], 
+                [
+                    "1", 
+                    "2", 
+                    "inf"
+                ], 
+                [
+                    "None", 
+                    "0.0", 
+                    "1.0"
+                ], 
+                [
+                    "8", 
+                    "128"
+                ]
+            ], 
+            "result": null
+        }
+    }, 
+    "started_at": {
+        "spatial.Query.time_query": 1558682728236
+    }, 
+    "version": 1
+}
