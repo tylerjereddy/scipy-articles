@@ -5,7 +5,7 @@
     "commit_hash": "f3c1df037aec78ae4f1695f51d7cabc76b594547", 
     "date": 1508967224000, 
     "ended_at": {
-        "spatial.Query.time_query": 1558457370944
+        "spatial.Query.time_query": 1559170355960
     }, 
     "env_name": "conda-py2.7-Cython0.27.3-Tempita-blas-lapack-numpy1.8.2-pytest-six", 
     "params": {
@@ -61,7 +61,7 @@
         }
     }, 
     "started_at": {
-        "spatial.Query.time_query": 1558457370943
+        "spatial.Query.time_query": 1559170355959
     }, 
     "version": 1
 }

@@ -5,7 +5,7 @@
     "commit_hash": "3deede3a017da339de37d7aa1c9a55f9e19f92cc", 
     "date": 1456749106000, 
     "ended_at": {
-        "spatial.Query.time_query": 1558505830630
+        "spatial.Query.time_query": 1559110609701
     }, 
     "env_name": "virtualenv-py2.7-Cython0.27.3-Tempita-numpy1.8.2-pytest-six", 
     "params": {
@@ -57,7 +57,7 @@
         }
     }, 
     "started_at": {
-        "spatial.Query.time_query": 1558505830630
+        "spatial.Query.time_query": 1559110609701
     }, 
     "version": 1
 }
