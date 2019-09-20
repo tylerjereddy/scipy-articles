@@ -3,6 +3,15 @@
 
 \documentclass[10pt,stdletter,dateno]{newlfm}
 
+\usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\@zfancyhead}{\fancy@reset}{\f@nch@reset}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyolh}{\f@nch@olh}{}{}
+\patchcmd{\@set@em@up}{\f@ncyorh}{\f@nch@orh}{}{}
+\makeatother
+
 % to adjust vertical spacing properties of
 % newlfm class see: https://tex.stackexchange.com/a/65533/43006
 %\unprtop{0mm}
@@ -39,44 +48,10 @@
 \widowpenalty=1000
 \clubpenalty=1000
 
-\namefrom{Ralf Gommers,
-          Matt Haberland,
-          and Tyler Reddy}
-\addrfrom{%
-    \today\\[10pt]
-    Ralf Gommers\\
-    Quansight Labs\\
-    The Netherlands\\
-    \texttt{ralf.gommers@gmail.com}\\
-    %phone number\\
-    \\
-    Matt Haberland\\
-    BioResource and Agricultural Engineering\\
-    California Polytechnic State University\\
-    San Luis Obispo, CA 93407, USA\\
-    \texttt{mhaberla@calpoly.edu}\\
-    %phone number\\
-    \\
-    Tyler Reddy\\
-    CCS-7 Applied Computer Science Group\\
-    Los Alamos National Laboratory\\
-    Los Alamos, NM 87545, USA\\
-    \texttt{treddy@lanl.gov}\\
-    %phone number\\
-}
-
-\addrto{%
-Dr. Rita Strack\\
-Nature Methods Editorial Office\\
-One New York Plaza Suite 4500\\
-New York, NY 10004, USA}
-
-\greetto{Dear Dr. Strack,}
-\closeline{Sincerely,}
 \begin{document}
 \begin{newlfm}
 
-We appreciate the careful review and helpful suggestions from you and the reviewers. Each comment is quoted and addressed below in the order of the original review, with the exception that the requests from both reviewers to address GPU/distributed computing have been combined. We also link the relevant GitHub issues in which we discussed and implemented each suggestion. As requested, the corresponding changes are underlined in the revised manuscript.
+Each comment is quoted and addressed below in the order of the original review, with the exception that the requests from both reviewers to address GPU/distributed computing have been combined. We also link the relevant GitHub issues in which we discussed and implemented each suggestion. As requested, the corresponding changes are underlined in the revised manuscript.
 
 \begin{quote}
 I would like a longer discussion about the future of SciPy particularly SciPy’s lack of the two features that are starting to become understood as essential to scientific computing: built-in automatic reverse-mode differentiation and heterogenous computation (e.g. CPU, DSP, GPU, etc.). Will SciPy adapt to support these increasingly vital features? Is it even possible without a substantial rewrite?
